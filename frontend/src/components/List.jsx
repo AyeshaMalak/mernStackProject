@@ -6,7 +6,7 @@ const BookList = ({ selectedCategory }) => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    let url = "http://localhost:5000/api/books";
+    let url = "https://mernstackproject-production.up.railway.app";
     if (selectedCategory) url += `?category=${selectedCategory}`;
 
     fetch(url)
